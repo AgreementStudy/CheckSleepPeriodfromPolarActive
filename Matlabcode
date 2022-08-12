@@ -2,7 +2,7 @@ clear;
 clc;
 close all;
 
-Data=readtable('P0574_596_metValues.csv'); % file name is here
+Data=readtable('P0574_596_metValues.csv'); % The adress tp to the Polar CSV file name
 METvalues=(table2array(Data(:,3)));
 DateTime=(table2array(Data(:,2)));
 DateTime.Format='HH:mm:ss';
